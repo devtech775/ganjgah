@@ -1,0 +1,964 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rezvan;
+  font-size: 14pt;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  /*direction: rtl;*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../asset/font/Rezvan.eot?#') format('eot'),
+  url('../../asset/font/Rezvan.ttf') format('truetype'),
+  url('../../asset/font/Rezvan.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gol';
+  src: url('../font/gol3.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mirza';
+  src: url('../font/Mirza-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mirza';
+  src: url('../font/Mirza-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.content-body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #e6eef6, #ffffff);
+  direction: rtl;
+}
+
+.navbar-expand-lg {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+
+}
+
+.navbar {
+  direction: rtl;
+}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+.navbar {
+  background: var(--menu-bg);
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  direction: rtl;
+}
+
+.navbar > .container, .navbar > .container-fluid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 540px;
+}
+
+.container {
+  max-width: 720px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  /*margin-right: auto;*/
+  margin-left: auto;
+}
+
+.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-brand {
+  color: var(--white-color);
+  font-size: var(--h2-font-size);
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-brand {
+  color: var(--white-color);
+  font-size: var(--h2-font-size);
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  margin-right: 100px;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.ml-auto, .mx-auto {
+  margin-left: auto !important;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.nav-link {
+  color: var(--white-color);
+  font-size: var(--menu-font-size);
+  letter-spacing: .4px;
+  margin: 0 4em;
+  padding: .6em;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.image-left-background {
+  background: url('../../image/img-left.png') no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#footer-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 4%;
+  border: none;
+  z-index: 1000;
+  bottom: 0;
+  left: 0px;
+  text-align: center;
+}
+
+#footer-design {
+  direction: ltr;
+  color: #999898;
+  font-family: Arial !important;
+  line-height: 25px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ecc75b;
+  color: #111;
+  border: none;
+  border-bottom: 2px solid #cbc8c8;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+  vertical-align: middle;
+  text-decoration: none;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #ecc75c;
+  border-bottom: 2px solid #78af93;
+  transition: all 0.2s;
+}
+
+.block-justify {
+  text-align: justify;
+}
+
+.img-index-book {
+  width: 267px;
+  height: 324px;
+  box-shadow: 0px 0px 0px 0px rgba(196, 196, 196, 0.64);
+  border-radius: 20px;
+}
+
+.content-item {
+  display: inline-flex;
+
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  margin: 0 auto;
+  margin-right: 80px;
+}
+
+.content-item pre {
+  line-height: 28px;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 400;
+}
+
+/*fal*/
+
+.fal-content-body {
+  width: 100%;
+  height: 100%;
+  background: url('../../image/fal-bg.png') no-repeat;
+  /*background-size: contain;*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center
+}
+
+.fal-part {
+  position: absolute;
+  width: 467px;
+  height: 620px;
+  right: 50px;
+  top: 35px;
+
+  background: rgba(236, 210, 118, 0.8);
+  border-radius: 15px;
+  direction: rtl;
+}
+
+.fal-ghazal-number-part {
+  position: absolute;
+  width: 440px;
+  height: 330px;
+  right: 18px;
+  top: 12px;
+
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.fal-ghazal-number-lbl {
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  right: 150px;
+  top: 15px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+.fal-ghazal-number-text {
+  position: absolute;
+  width: 420px;
+  height: 205px;
+
+  right: 10px;
+  top: 40px;
+
+  text-align: center;
+}
+
+#fal-ghazal-text-verse-odd  {
+  /*position: absolute;*/
+  width: 180px;
+  height: 18px;
+  right: 20px;
+  top: 10px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+
+  color: #171717;
+  float: right;
+  text-align: right;
+}
+
+#fal-ghazal-text-verse-even  {
+  /*position: absolute;*/
+  width: 180px;
+  height: 18px;
+  right: 878.76px;
+  top: 133.24px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  margin-right: 50px;
+  color: #171717;
+
+  float: right;
+  text-align: right;
+}
+
+.fal-ghazal-music-prat {
+  position: absolute;
+  width: 180px;
+  height: 30px;
+  right: 125px;
+  top: 295px;
+
+  background: rgba(239, 239, 239, 0.8);
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.fal-ghazal-text-part {
+  position: absolute;
+  width: 436px;
+  height: 212px;
+  right: 18px;
+  top: 350px;
+
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.fal-ghazal-text-lbl {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  right: 20px;
+  top: 12px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.04em;
+
+  color: #171717;
+}
+
+.fal-ghazal-text {
+  position: absolute;
+  width: 350px;
+  height: 70px;
+  right: 20px;
+  top: 40px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5pt;
+  line-height: 20px;
+  /* or 154% */
+
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+.fal-ghazal-text pre {
+  width: 350px;
+  height: 70px;
+}
+
+.fal-btn {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  right: 150px;
+  top: 570px;
+
+  background: #DFE9F3;
+  border-radius: 10px 0px;
+}
+
+/*detail-ganjoor*/
+
+.detail-ganjoor-content-body {
+  width: 100%;
+  height: 100%;
+  background: url('../../image/detail-ganjoor-bg.png') no-repeat;
+  /*background-size: contain;*/
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.detail-ganjoor-btn {
+  width: 150px;
+  height: 40px;
+  background: #DFE9F3;
+  border-radius: 10px 0px;
+  float: left;
+  margin: 5px;
+}
+
+.detail-ganjoor-right-image {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 0px 0px rgba(196, 196, 196, 0.64);
+  float: right;
+}
+
+#detail-ganjoor-poet-image {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 680px;
+  top: 20px;
+
+  filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+  border-radius: 15px;
+  z-index: 1000;
+}
+
+.detail-ganjoor-ghazal-text-part1 {
+  position: absolute;
+  width: 830px;
+  height: 420px;
+  left: -23px;
+  top: 146px;
+
+  background: #F5D36F;
+  border: 1px solid #F4BB13;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.detail-ganjoor-ghazal-text-part2 {
+  position: absolute;
+  width: 680px;
+  height: 343px;
+  left: 71px;
+  top: 40px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.detail-ganjoor-ghazal-number-part {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  left: 267px;
+  top: 30px;
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #171717;
+  direction: rtl;
+}
+
+.detail-ganjoor-ghazal-text-part {
+  position: absolute;
+  width: 600px;
+  height: 205px;
+
+  left: 4px;
+  top: 70px;
+
+  text-align: center;
+}
+
+#detail-ganjoor-ghazal-text-verse-odd  {
+  /*position: absolute;*/
+  width: 50%;
+  height: 18px;
+  right: 20px;
+  top: 10px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+
+  color: #171717;
+  float: right;
+  text-align: right;
+}
+
+
+#detail-ganjoor-ghazal-text-verse-even  {
+  /*position: absolute;*/
+  width: 50%;
+  height: 18px;
+  right: 878px;
+  top: 133px;
+
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 14px;
+
+  color: #171717;
+
+  float: right;
+  text-align: right;
+  padding: 5px;
+}
+
+.detail-ganjoor-available-update-image {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 780px;
+  top: 370px;
+  cursor: pointer;
+}
+
+.detail-ganjoor-meaning-text-part {
+  position: absolute;
+  width: 759px;
+  height: 292px;
+  left: 777px;
+  top: 259px;
+
+  background: rgba(208, 227, 245, 0.5);
+  border: 1px solid #99C4EF;
+  box-sizing: border-box;
+}
+
+#detail-ganjoor-meaning-text {
+  position: absolute;
+  width: 700px;
+  height: 243px;
+  right: 18px;
+  top: 20px;
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #171717;
+  padding: 5px;
+}
+
+/*ganjoor*/
+
+.ganjoor-content-body {
+  width: 100%;
+  height: 100%;
+  background: url('../../image/ganjoor-bg.png') no-repeat;
+  /*background-size: contain;*/
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ganjoor-ghazal-text-part {
+  position: absolute;
+  width: 830px;
+  height: 420px;
+  left: -23px;
+  top: 146px;
+
+  background: #F5D36F;
+  border: 1px solid #F4BB13;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.ganjoor-left-image {
+  width: 200px;
+  float: left;
+}
+
+.ganjoor-meaning-text-part {
+  position: absolute;
+  width: 759px;
+  height: 292px;
+  left: 777px;
+  top: 259px;
+
+  background: rgba(208, 227, 245, 0.5);
+  border: 1px solid #99C4EF;
+  box-sizing: border-box;
+}
+
+.ganjoor-btn {
+  width: 150px;
+  height: 40px;
+  background: #DFE9F3;
+  border-radius: 10px 0px;
+  float: left;
+  margin: 5px;
+}
+
+.ganjoor-btn-left {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 38px;
+  top: 622px;
+  background: #6788BE;
+  text-align: center;
+
+  border-radius: 50%;
+  /*display: inline-block;*/
+  cursor: pointer;
+}
+
+.ganjoor-btn-left-img {
+  width: 28px;
+  height: 28px;
+
+  margin-top: 5px;
+}
+
+.ganjoor-btn-right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 86px;
+  top: 622px;
+  background: #6788BE;
+  text-align: center;
+
+  border-radius: 50%;
+  /*display: inline-block;*/
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.ganjoor-btn-right-img {
+  width: 28px;
+  height: 28px;
+
+  margin-top: 5px;
+}
+
+.btn-part {
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  text-align: center;
+}
+
+.ganjoor-poet-part1 {
+  position: absolute;
+  top: 407px;
+  left: 140px;
+
+  width: 97.5%;
+  height: 273px;
+  padding: 8px;
+
+  align-items: flex-end;
+  direction: ltr;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  will-change: transform;
+  z-index: 1000;
+
+  /*border: 1px solid #000;*/
+}
+
+.ganjoor-poet-part2 {
+/*  position: absolute;
+  width: 88%;
+  height: 273px;
+  left: 160px;
+  top: 407px;
+  filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+  border-radius: 15px;
+  /!*border: 2px solid #000;*!/
+  padding: 8px;
+  z-index: 1000;*/
+
+  align-items: center;
+  display: flex;
+  transition-duration: .5s;
+  margin-left: 30px;
+}
+
+.ganjoor-poet-item {
+  display: inline-block;
+  width: 187px;
+  height: 262px;
+
+  /*background: url(zyro-image (2).jpg);*/
+  filter: drop-shadow(0px 5px 4px rgba(183, 183, 183, 0.87));
+  border-radius: 15px;
+  margin-right: 40px;
+  background: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ganjoor-poet-item-img {
+  width: 170px;
+  height: 252px;
+
+  /*background: url(zyro-image (2).jpg);*/
+  border-radius: 15px;
+}
+
+.ganjoor-poet-item-lbl {
+  position: absolute;
+  width: 181px;
+  height: 36px;
+  left: 3px;
+  top: 219px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+  text-align: center;
+}
+
+#btn-back-home {
+  cursor: pointer;
+}
+
+/*about*/
+
+.about-content-body {
+  width: 100%;
+  height: 100%;
+  background: url('../../image/fal-bg.png') no-repeat;
+  /*background-size: contain;*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center
+}
+
+.about-content {
+  width: 40%;
+  height: 620px;
+
+  padding: 50px;
+  margin: auto auto;
+  direction: rtl;
+}
+
+
+.about-part {
+  width: 100%;
+  height: 620px;
+
+  background: rgba(236, 210, 118, 0.8);
+  border-radius: 15px;
+
+  text-align: center;
+  padding-top: 15px;
+}
+
+.about-ghazal-number-part {
+  width: 90%;
+  height: 90%;
+
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin: auto auto;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.about-ghazal-number-lbl {
+  width: 100%;
+  height: 20px;
+  font-family: A Rezvan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.about-ghazal-number-text {
+  width: 100%;
+  height: 205px;
+
+  text-align: center;
+  margin-top: 15px;
+}
+
+.about-lbl-title {
+  width: 44%;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.about-lbl-name {
+  width: 45%;
+  text-align: center;
+  display: inline-block;
+}
+
+.about-ostad {
+  width: 90%;
+  text-align: center;
+  display: inline-block;
+}
+
+.about-btn {
+  width: 150px;
+  height: 40px;
+
+  background: #DFE9F3;
+  border-radius: 10px 0px;
+}
